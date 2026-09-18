@@ -1,0 +1,31 @@
+ADNI source data snapshot
+Download date: 2026-09-18
+
+Source:
+Alzheimer's Disease Neuroimaging Initiative (ADNI)
+LONI Image & Data Archive (IDA)
+
+Files used at metadata-inventory stage:
+
+DATADIC_18Sep2026.csv
+DXSUM_18Sep2026.csv
+REGISTRY_18Sep2026.csv
+ROSTER_18Sep2026.csv
+ADNIMERGE2.tar.gz
+
+Purpose:
+- Data dictionary / variable definitions
+- Clinical diagnosis
+- Visit registry
+- Subject identifier mapping
+- Supporting ADNI harmonized tables
+
+Raw participant-level data are stored locally under data/raw/ and are excluded
+from version control.
+
+SHA256:
+ee7a7fdd117d242f7a27f3628a059bf113ea13fe85177bb3b5e25bfda2b46b78  data/raw/metadata/extracted/DATADIC_18Sep2026.csv
+d1c596bd25f07cf5fc8b8f6ccb093ed7d6741f273005328e94c6a5e973270ec5  data/raw/metadata/extracted/DXSUM_18Sep2026.csv
+32bdfa76608962260a5f401a66ac4472502a21d6e3953731627ecf4dc1fd7c05  data/raw/metadata/extracted/REGISTRY_18Sep2026.csv
+e5200061c512e5715fd17bc8fd643fb24f6883888c8d25bbdda53cc78dd0f3a1  data/raw/metadata/extracted/ROSTER_18Sep2026.csv
+c2b2973e3216a6da2fb22b6c25200ca25283a007a4dfc2ad4814e4333b18fb13  data/raw/metadata/source_archives/ADNIMERGE2.tar.gz
