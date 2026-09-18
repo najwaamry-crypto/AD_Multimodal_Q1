@@ -1,0 +1,25 @@
+# ADNI data
+data/raw/
+data/interim/
+data/processed/
+
+# Model weights
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+# Logs / temp
+logs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Python environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
