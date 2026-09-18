@@ -1,0 +1,115 @@
+{
+  "DXSUM": {
+    "rows": 16461,
+    "columns": 41,
+    "unique_rids": 3766,
+    "missing_rid": 0,
+    "phases": [
+      "ADNI1",
+      "ADNI2",
+      "ADNI3",
+      "ADNI4",
+      "ADNIGO",
+      "TEAM"
+    ],
+    "examdate_min": "2005-09-29",
+    "examdate_max": "2026-09-18",
+    "missing_examdate": 112,
+    "duplicate_phase_rid_visit_rows": 4,
+    "diagnosis_by_phase": {
+      "ADNI1": {
+        "1": 1130,
+        "2": 1606,
+        "3": 1132,
+        "10": 0,
+        "<NA>": 0
+      },
+      "ADNI2": {
+        "1": 1956,
+        "2": 2608,
+        "3": 1107,
+        "10": 0,
+        "<NA>": 0
+      },
+      "ADNI3": {
+        "1": 1818,
+        "2": 1279,
+        "3": 450,
+        "10": 0,
+        "<NA>": 40
+      },
+      "ADNI4": {
+        "1": 1658,
+        "2": 842,
+        "3": 299,
+        "10": 0,
+        "<NA>": 6
+      },
+      "ADNIGO": {
+        "1": 89,
+        "2": 323,
+        "3": 63,
+        "10": 0,
+        "<NA>": 0
+      },
+      "TEAM": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "10": 55,
+        "<NA>": 0
+      }
+    },
+    "diagnosis_counts": {
+      "1": 6651,
+      "2": 6658,
+      "3": 3051,
+      "10": 55,
+      "<NA>": 46
+    },
+    "rid_with_multiple_ptid": 0,
+    "ptid_with_multiple_rid": 0
+  },
+  "REGISTRY": {
+    "rows": 29610,
+    "columns": 26,
+    "unique_rids": 5039,
+    "missing_rid": 0,
+    "phases": [
+      "ADNI1",
+      "ADNI2",
+      "ADNI3",
+      "ADNI4",
+      "ADNIGO",
+      "TEAM"
+    ],
+    "examdate_min": "2005-08-17",
+    "examdate_max": "2026-09-16",
+    "missing_examdate": 4564,
+    "duplicate_phase_rid_visit_rows": 147,
+    "rid_with_multiple_ptid": 0,
+    "ptid_with_multiple_rid": 0
+  },
+  "ROSTER": {
+    "rows": 7413,
+    "columns": 9,
+    "unique_rids": 5124,
+    "missing_rid": 0,
+    "phases": [
+      "ADNI1",
+      "ADNI2",
+      "ADNI3",
+      "ADNI4",
+      "ADNIGO",
+      "TEAM"
+    ],
+    "duplicate_phase_rid_visit_rows": 0,
+    "rid_with_multiple_ptid": 0,
+    "ptid_with_multiple_rid": 0
+  },
+  "RID_OVERLAP": {
+    "all_three": 3764,
+    "dxsum_not_roster": 0,
+    "dxsum_not_registry": 2
+  }
+}
