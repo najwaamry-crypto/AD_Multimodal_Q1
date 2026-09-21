@@ -1,0 +1,36 @@
+{
+  "source": "FDG_PET_Inventory_21Sep2026_Key_PET_21Sep2026.csv",
+  "rows": 2699,
+  "unique_subject_ids": 1403,
+  "unique_rids": 1403,
+  "missing_rid_after_roster_join": 0,
+  "unique_image_ids": 2699,
+  "duplicate_image_id_rows": 0,
+  "missing_image_date": 0,
+  "image_date_min": "2005-09-29",
+  "image_date_max": "2023-03-23",
+  "radiopharmaceutical": {
+    "18F-FDG": 2699
+  },
+  "pet_description": {
+    "Coreg, Avg, Std Img and Vox Siz, Uniform 6mm Res": 2699
+  },
+  "tau_pet": {
+    "nan": 2699
+  },
+  "amyloid_pet": {
+    "nan": 2699
+  },
+  "subject_visit_date_groups": 2699,
+  "groups_with_multiple_fdg_images": 0,
+  "max_fdg_images_same_subject_visit_date": 1,
+  "fdg_images_per_subject_visit_date": {
+    "1": 2699
+  },
+  "visits_per_subject": {
+    "median": 1.0,
+    "min": 1,
+    "max": 10
+  },
+  "subject_visit_pairs_with_multiple_dates": 0
+}
