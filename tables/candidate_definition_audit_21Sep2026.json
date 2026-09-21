@@ -1,0 +1,278 @@
+{
+  "pet_mri_pairs_input": 2691,
+  "pairs_with_nearest_same_visit_valid_dx": 2678,
+  "subjects_with_nearest_same_visit_valid_dx": 1386,
+  "ambiguous_nearest_diagnosis_ties": 0,
+  "diagnosis_pet_gap_days": {
+    "median": 10.0,
+    "p75": 26.0,
+    "p90": 62.30000000000018,
+    "p95": 104.15000000000009,
+    "max": 1931
+  },
+  "same_visit_mri_index_cohort": {
+    "subjects": 607,
+    "class_counts": {
+      "CN": 181,
+      "MCI": 311,
+      "Dementia": 115
+    },
+    "phase_counts": {
+      "ADNI2": 337,
+      "ADNI1": 199,
+      "ADNI3": 49,
+      "ADNIGO": 22
+    },
+    "mri_pet_gap_median": 5.0,
+    "mri_pet_gap_p90": 33.0,
+    "dx_pet_gap_median": 9.0,
+    "dx_pet_gap_p90": 53.39999999999998,
+    "same_visit_mri_subjects": 607
+  },
+  "threshold_analysis": {
+    "14": {
+      "eligible_pet_exams": 1049,
+      "eligible_subjects": 654,
+      "earliest_eligible": {
+        "subjects": 654,
+        "class_counts": {
+          "CN": 189,
+          "MCI": 341,
+          "Dementia": 124
+        },
+        "phase_counts": {
+          "ADNI2": 371,
+          "ADNI1": 189,
+          "ADNI3": 51,
+          "ADNIGO": 43
+        },
+        "mri_pet_gap_median": 7.0,
+        "mri_pet_gap_p90": 14.0,
+        "dx_pet_gap_median": 7.0,
+        "dx_pet_gap_p90": 39.700000000000045,
+        "same_visit_mri_subjects": 409
+      },
+      "baseline_only": {
+        "subjects": 245,
+        "class_counts": {
+          "CN": 64,
+          "MCI": 131,
+          "Dementia": 50
+        },
+        "phase_counts": {
+          "ADNI2": 174,
+          "ADNI3": 29,
+          "ADNIGO": 27,
+          "ADNI1": 15
+        },
+        "mri_pet_gap_median": 11.0,
+        "mri_pet_gap_p90": 14.0,
+        "dx_pet_gap_median": 7.0,
+        "dx_pet_gap_p90": 41.599999999999994,
+        "same_visit_mri_subjects": 0
+      },
+      "closest_pair_sensitivity": {
+        "subjects": 654,
+        "class_counts": {
+          "CN": 186,
+          "MCI": 330,
+          "Dementia": 138
+        },
+        "phase_counts": {
+          "ADNI2": 376,
+          "ADNI1": 188,
+          "ADNI3": 67,
+          "ADNIGO": 23
+        },
+        "mri_pet_gap_median": 3.0,
+        "mri_pet_gap_p90": 12.0,
+        "dx_pet_gap_median": 8.0,
+        "dx_pet_gap_p90": 43.0,
+        "same_visit_mri_subjects": 490
+      }
+    },
+    "30": {
+      "eligible_pet_exams": 1672,
+      "eligible_subjects": 987,
+      "earliest_eligible": {
+        "subjects": 987,
+        "class_counts": {
+          "CN": 279,
+          "MCI": 522,
+          "Dementia": 186
+        },
+        "phase_counts": {
+          "ADNI2": 572,
+          "ADNI1": 201,
+          "ADNI3": 115,
+          "ADNIGO": 99
+        },
+        "mri_pet_gap_median": 16.0,
+        "mri_pet_gap_p90": 27.0,
+        "dx_pet_gap_median": 8.0,
+        "dx_pet_gap_p90": 40.0,
+        "same_visit_mri_subjects": 237
+      },
+      "baseline_only": {
+        "subjects": 750,
+        "class_counts": {
+          "CN": 199,
+          "MCI": 408,
+          "Dementia": 143
+        },
+        "phase_counts": {
+          "ADNI2": 479,
+          "ADNI3": 102,
+          "ADNI1": 90,
+          "ADNIGO": 79
+        },
+        "mri_pet_gap_median": 19.0,
+        "mri_pet_gap_p90": 27.0,
+        "dx_pet_gap_median": 8.0,
+        "dx_pet_gap_p90": 41.10000000000002,
+        "same_visit_mri_subjects": 0
+      },
+      "closest_pair_sensitivity": {
+        "subjects": 987,
+        "class_counts": {
+          "CN": 275,
+          "MCI": 495,
+          "Dementia": 217
+        },
+        "phase_counts": {
+          "ADNI2": 593,
+          "ADNI1": 200,
+          "ADNI3": 142,
+          "ADNIGO": 52
+        },
+        "mri_pet_gap_median": 9.0,
+        "mri_pet_gap_p90": 25.0,
+        "dx_pet_gap_median": 8.0,
+        "dx_pet_gap_p90": 45.39999999999998,
+        "same_visit_mri_subjects": 527
+      }
+    },
+    "60": {
+      "eligible_pet_exams": 2050,
+      "eligible_subjects": 1205,
+      "earliest_eligible": {
+        "subjects": 1205,
+        "class_counts": {
+          "CN": 323,
+          "MCI": 650,
+          "Dementia": 232
+        },
+        "phase_counts": {
+          "ADNI2": 663,
+          "ADNI1": 212,
+          "ADNI3": 205,
+          "ADNIGO": 125
+        },
+        "mri_pet_gap_median": 21.0,
+        "mri_pet_gap_p90": 43.0,
+        "dx_pet_gap_median": 9.0,
+        "dx_pet_gap_p90": 43.0,
+        "same_visit_mri_subjects": 141
+      },
+      "baseline_only": {
+        "subjects": 1064,
+        "class_counts": {
+          "CN": 276,
+          "MCI": 581,
+          "Dementia": 207
+        },
+        "phase_counts": {
+          "ADNI2": 632,
+          "ADNI3": 192,
+          "ADNI1": 137,
+          "ADNIGO": 103
+        },
+        "mri_pet_gap_median": 22.0,
+        "mri_pet_gap_p90": 44.0,
+        "dx_pet_gap_median": 9.0,
+        "dx_pet_gap_p90": 44.700000000000045,
+        "same_visit_mri_subjects": 0
+      },
+      "closest_pair_sensitivity": {
+        "subjects": 1205,
+        "class_counts": {
+          "CN": 317,
+          "MCI": 615,
+          "Dementia": 273
+        },
+        "phase_counts": {
+          "ADNI2": 695,
+          "ADNI3": 238,
+          "ADNI1": 211,
+          "ADNIGO": 61
+        },
+        "mri_pet_gap_median": 13.0,
+        "mri_pet_gap_p90": 39.0,
+        "dx_pet_gap_median": 9.0,
+        "dx_pet_gap_p90": 52.20000000000027,
+        "same_visit_mri_subjects": 538
+      }
+    },
+    "90": {
+      "eligible_pet_exams": 2140,
+      "eligible_subjects": 1254,
+      "earliest_eligible": {
+        "subjects": 1254,
+        "class_counts": {
+          "CN": 334,
+          "MCI": 677,
+          "Dementia": 243
+        },
+        "phase_counts": {
+          "ADNI2": 680,
+          "ADNI3": 233,
+          "ADNI1": 214,
+          "ADNIGO": 127
+        },
+        "mri_pet_gap_median": 22.0,
+        "mri_pet_gap_p90": 49.0,
+        "dx_pet_gap_median": 10.0,
+        "dx_pet_gap_p90": 45.700000000000045,
+        "same_visit_mri_subjects": 128
+      },
+      "baseline_only": {
+        "subjects": 1126,
+        "class_counts": {
+          "CN": 290,
+          "MCI": 617,
+          "Dementia": 219
+        },
+        "phase_counts": {
+          "ADNI2": 652,
+          "ADNI3": 221,
+          "ADNI1": 148,
+          "ADNIGO": 105
+        },
+        "mri_pet_gap_median": 23.0,
+        "mri_pet_gap_p90": 49.0,
+        "dx_pet_gap_median": 10.0,
+        "dx_pet_gap_p90": 48.0,
+        "same_visit_mri_subjects": 0
+      },
+      "closest_pair_sensitivity": {
+        "subjects": 1254,
+        "class_counts": {
+          "CN": 328,
+          "MCI": 642,
+          "Dementia": 284
+        },
+        "phase_counts": {
+          "ADNI2": 713,
+          "ADNI3": 267,
+          "ADNI1": 213,
+          "ADNIGO": 61
+        },
+        "mri_pet_gap_median": 14.0,
+        "mri_pet_gap_p90": 44.0,
+        "dx_pet_gap_median": 10.0,
+        "dx_pet_gap_p90": 54.0,
+        "same_visit_mri_subjects": 538
+      }
+    }
+  }
+}

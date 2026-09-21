@@ -1,0 +1,72 @@
+{
+  "mri_unique_rids": 3207,
+  "pet_unique_rids": 1403,
+  "valid_diagnosis_unique_rids": 3700,
+  "mri_pet_subject_overlap": 1395,
+  "mri_pet_diagnosis_subject_overlap": 1393,
+  "pet_exams_with_any_mri": 2691,
+  "pet_exams_with_same_visit_mri": 1032,
+  "unique_rids_with_same_visit_mri": 607,
+  "ambiguous_valid_diagnosis_rid_visit_keys": 0,
+  "pet_exams_with_exact_visit_diagnosis": 2681,
+  "unique_rids_with_exact_visit_diagnosis": 1389,
+  "nearest_mri_date_ties_gt1": 4,
+  "mri_pet_gap_days": {
+    "median": 21.0,
+    "mean": 114.78520995912301,
+    "p25": 7.0,
+    "p75": 53.0,
+    "p90": 359.0,
+    "max": 2762
+  },
+  "thresholds_days": {
+    "0": {
+      "pet_exams": 365,
+      "unique_rids": 206,
+      "pet_exams_with_exact_visit_diagnosis": 365,
+      "unique_rids_with_exact_visit_diagnosis": 206
+    },
+    "7": {
+      "pet_exams": 720,
+      "unique_rids": 461,
+      "pet_exams_with_exact_visit_diagnosis": 719,
+      "unique_rids_with_exact_visit_diagnosis": 460
+    },
+    "14": {
+      "pet_exams": 1050,
+      "unique_rids": 655,
+      "pet_exams_with_exact_visit_diagnosis": 1049,
+      "unique_rids_with_exact_visit_diagnosis": 654
+    },
+    "30": {
+      "pet_exams": 1675,
+      "unique_rids": 990,
+      "pet_exams_with_exact_visit_diagnosis": 1672,
+      "unique_rids_with_exact_visit_diagnosis": 987
+    },
+    "60": {
+      "pet_exams": 2056,
+      "unique_rids": 1211,
+      "pet_exams_with_exact_visit_diagnosis": 2051,
+      "unique_rids_with_exact_visit_diagnosis": 1206
+    },
+    "90": {
+      "pet_exams": 2147,
+      "unique_rids": 1261,
+      "pet_exams_with_exact_visit_diagnosis": 2141,
+      "unique_rids_with_exact_visit_diagnosis": 1255
+    },
+    "180": {
+      "pet_exams": 2281,
+      "unique_rids": 1312,
+      "pet_exams_with_exact_visit_diagnosis": 2275,
+      "unique_rids_with_exact_visit_diagnosis": 1306
+    },
+    "365": {
+      "pet_exams": 2439,
+      "unique_rids": 1334,
+      "pet_exams_with_exact_visit_diagnosis": 2432,
+      "unique_rids_with_exact_visit_diagnosis": 1328
+    }
+  }
+}
