@@ -1,0 +1,21 @@
+{
+  "primary_manifest_subjects": 882,
+  "mri_protocol_phase_counts": {
+    "ADNIGO/ADNI2": 574,
+    "ADNI1": 204,
+    "ADNI3": 104
+  },
+  "adni1_subjects": 204,
+  "adni1_candidate_series": 419,
+  "adni1_series_with_usable_rank": 419,
+  "adni1_series_with_passing_rank": 409,
+  "adni1_subject_resolution_status": {
+    "best_rank_tie": 127,
+    "unique_best_rank": 73,
+    "no_passing_rank": 4
+  },
+  "adni1_unique_best_rank_subjects": 73,
+  "adni1_best_rank_tie_subjects": 127,
+  "adni1_no_passing_rank_subjects": 4,
+  "mrimprank_conflicting_series": 2
+}
