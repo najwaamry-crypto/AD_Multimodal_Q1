@@ -327,3 +327,84 @@ ADNI3 selection is locked.
 
 The three phase-specific selections must next be merged into one validated MRI
 selection manifest before any primary-cohort MRI image volumes are downloaded.
+
+---
+
+## Global phase-specific MRI selection
+
+The locked ADNI1, ADNIGO/ADNI2, and ADNI3 MRI selection outputs were merged
+back into the 882-subject primary multimodal candidate manifest.
+
+The merge was performed one-to-one by RID and required agreement between the
+MRI protocol family recorded in the original candidate manifest and the
+phase-specific MRI selection source.
+
+### Final post-MRI-QC cohort
+
+Primary multimodal candidate subjects before MRI QC: 882
+
+Subjects retained after MRI QC: 822
+
+Subjects excluded by MRI QC: 60
+
+Phase-specific results:
+
+- ADNI1: 174 selected / 30 excluded
+- ADNIGO/ADNI2: 545 selected / 29 excluded
+- ADNI3: 103 selected / 1 excluded
+
+Diagnostic distribution among the 822 MRI-QC-selected subjects:
+
+- CN: 224
+- MCI: 438
+- Dementia: 160
+
+Diagnostic distribution among the 60 MRI-QC-excluded subjects:
+
+- CN: 21
+- MCI: 25
+- Dementia: 14
+
+### MRI exclusion reasons
+
+- unresolved ADNI1 tied best rank without standardized-series resolution: 26
+- GO/ADNI2 accelerated candidate not selected by Mayo QC: 13
+- GO/ADNI2 without accelerated candidate: 11
+- GO/ADNI2 accelerated candidate without usable QC match: 5
+- ADNI1 without a passing MPRAGE rank: 4
+- ADNI3 primary candidate without matching Mayo QC record: 1
+
+### Series-level integrity
+
+Every retained subject has exactly one selected LONI MRI series.
+
+Three ADNIGO/ADNI2 subjects contain two Key MRI image_id records referring to
+the same already-selected LONI series:
+
+- RID 4138: LONI series 200478
+- RID 4468: LONI series 213644
+- RID 4571: LONI series 216492
+
+These duplicated Key MRI rows do not represent competing MRI acquisitions and
+do not alter the subject-level MRI series selection.
+
+### Reproducibility
+
+Full 882-subject MRI selection manifest:
+
+data/interim/cohort/mri_selection_manifest_v1.csv
+
+Primary post-MRI-QC manifest:
+
+data/interim/cohort/primary_post_mri_qc_manifest_v1.csv
+
+Aggregate summary:
+
+tables/mri_selection_manifest_v1_summary.json
+
+Merge and validation script:
+
+src/cohort/16_merge_phase_specific_mri_selection.py
+
+The MRI QC and series-selection stage is considered locked. Its rules must not
+be changed based on downstream model performance.

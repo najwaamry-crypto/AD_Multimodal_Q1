@@ -1,0 +1,39 @@
+{
+  "candidate_subjects": 882,
+  "mri_qc_selected": 822,
+  "mri_qc_excluded": 60,
+  "selected_class_counts": {
+    "MCI": 438,
+    "CN": 224,
+    "Dementia": 160
+  },
+  "excluded_class_counts": {
+    "MCI": 25,
+    "CN": 21,
+    "Dementia": 14
+  },
+  "phase_counts": {
+    "ADNI1": {
+      "excluded": 30,
+      "selected": 174
+    },
+    "ADNI3": {
+      "excluded": 1,
+      "selected": 103
+    },
+    "ADNIGO/ADNI2": {
+      "excluded": 29,
+      "selected": 545
+    }
+  },
+  "status_counts": {
+    "selected": 822,
+    "exclude_tie_no_standardized_series": 26,
+    "exclude_accelerated_not_selected": 13,
+    "exclude_no_accelerated_candidate": 11,
+    "exclude_accelerated_qc_missing": 5,
+    "exclude_no_passing_rank": 4,
+    "exclude_qc_match_missing": 1
+  },
+  "selected_subjects_with_multiple_key_mri_rows": 3
+}
