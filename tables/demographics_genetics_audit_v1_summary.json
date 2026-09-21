@@ -1,0 +1,86 @@
+{
+  "subjects": 822,
+  "coverage": {
+    "adsl_age": {
+      "available": 822,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "sex": {
+      "available": 822,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "education_years": {
+      "available": 822,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "adsl_enrollment_date": {
+      "available": 822,
+      "missing": 0,
+      "coverage_pct": 100.0
+    },
+    "adsl_apoe": {
+      "available": 820,
+      "missing": 2,
+      "coverage_pct": 99.76
+    },
+    "apoeres_genotype": {
+      "available": 195,
+      "missing": 627,
+      "coverage_pct": 23.72
+    },
+    "age_at_index_candidate": {
+      "available": 822,
+      "missing": 0,
+      "coverage_pct": 100.0
+    }
+  },
+  "sex_counts": {
+    "Male": 455,
+    "Female": 367
+  },
+  "education": {
+    "min": 7.0,
+    "median": 16.0,
+    "max": 20.0
+  },
+  "apoeres_status_counts": {
+    "genotype_present_but_not_usable": 625,
+    "one_unique_usable_genotype": 195,
+    "no_apoeres_record": 2
+  },
+  "apoeres_genotype_counts": {
+    "nan": 627,
+    "3/3": 92,
+    "3/4": 62,
+    "4/4": 18,
+    "2/3": 17,
+    "2/4": 5,
+    "2/2": 1
+  },
+  "adsl_apoe_genotype_counts": {
+    "3/3": 369,
+    "3/4": 278,
+    "4/4": 84,
+    "2/3": 70,
+    "2/4": 16,
+    "2/2": 3,
+    "nan": 2
+  },
+  "apoe_sources_both_available": 195,
+  "apoe_sources_agree": 195,
+  "apoe_sources_disagree": 0,
+  "index_before_enrollment": 53,
+  "years_enrollment_to_index": {
+    "min": -0.085,
+    "median": 0.019,
+    "max": 11.671
+  },
+  "age_at_index_candidate": {
+    "min": 55.5,
+    "median": 73.42,
+    "max": 91.93
+  }
+}

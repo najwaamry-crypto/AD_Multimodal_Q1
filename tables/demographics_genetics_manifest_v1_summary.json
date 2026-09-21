@@ -1,0 +1,25 @@
+{
+  "subjects": 822,
+  "age_available": 822,
+  "sex_available": 822,
+  "education_available": 822,
+  "apoe_available": 820,
+  "apoe_missing": 2,
+  "apoe_source_validation_concordant": 820,
+  "apoe4_count_distribution": {
+    "0": 442,
+    "1": 294,
+    "2": 84,
+    "missing": 2
+  },
+  "pet_before_baseline": 53,
+  "minimum_baseline_to_pet_days": -31,
+  "maximum_baseline_to_pet_days": 4263,
+  "age_at_index": {
+    "mean": 73.435,
+    "std": 7.172,
+    "min": 55.5,
+    "median": 73.416,
+    "max": 91.933
+  }
+}
