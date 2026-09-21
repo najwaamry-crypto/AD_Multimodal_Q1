@@ -1,0 +1,35 @@
+{
+  "cohort_version": "primary_candidate_v1",
+  "participants": 882,
+  "unique_rids": 882,
+  "class_counts": {
+    "MCI": 463,
+    "CN": 245,
+    "Dementia": 174
+  },
+  "diagnosis_phase_counts": {
+    "ADNI2": 502,
+    "ADNI1": 196,
+    "ADNI3": 106,
+    "ADNIGO": 78
+  },
+  "mri_pet_gap_days": {
+    "median": 16.0,
+    "p90": 26.0,
+    "max": 30
+  },
+  "pet_dx_gap_days": {
+    "median": 7.0,
+    "p90": 21.0,
+    "max": 30
+  },
+  "mri_visit_matches_pet_subjects": 243,
+  "mri_candidate_series_distribution": {
+    "1": 94,
+    "2": 743,
+    "3": 38,
+    "4": 7
+  },
+  "subjects_with_multiple_mri_series": 788,
+  "ambiguous_dx_ties_excluded": 0
+}
