@@ -1,0 +1,18 @@
+{
+  "subjects": 822,
+  "pet": {
+    "subjects": 822,
+    "unique_image_ids": 822
+  },
+  "mri": {
+    "subjects": 822,
+    "unique_loni_series": 822,
+    "image_id_rows": 825,
+    "unique_image_ids": 825,
+    "subjects_with_multiple_image_ids": 3
+  },
+  "download_policy": {
+    "preferred_mri_unit": "selected LONI series",
+    "fallback": "If series-level download is unavailable, download all 825 selected MRI image IDs. Do not arbitrarily choose among duplicate Key MRI rows belonging to the same selected series."
+  }
+}
