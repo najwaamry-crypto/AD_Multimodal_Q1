@@ -1,0 +1,24 @@
+{
+  "subjects_total": 204,
+  "subjects_selected": 174,
+  "subjects_excluded": 30,
+  "status_counts": {
+    "selected": 174,
+    "exclude_tie_no_standardized_series": 26,
+    "exclude_no_passing_rank": 4
+  },
+  "selection_source_counts": {
+    "standardized_1.5T_list": 101,
+    "MRIMPRANK_unique_best": 73
+  },
+  "selected_class_counts": {
+    "MCI": 87,
+    "CN": 46,
+    "Dementia": 41
+  },
+  "excluded_class_counts": {
+    "CN": 12,
+    "MCI": 12,
+    "Dementia": 6
+  }
+}
