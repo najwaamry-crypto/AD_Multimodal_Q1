@@ -1,0 +1,78 @@
+{
+  "version": "split_assignments_v1",
+  "seed": 20260921,
+  "strategy": "Subject-level fixed 70/10/20 split, stratified on diagnosis only.",
+  "sizes": {
+    "train": 576,
+    "val": 82,
+    "test": 164
+  },
+  "diagnosis_by_split": {
+    "CN": {
+      "test": 45,
+      "train": 157,
+      "val": 22
+    },
+    "Dementia": {
+      "test": 32,
+      "train": 112,
+      "val": 16
+    },
+    "MCI": {
+      "test": 87,
+      "train": 307,
+      "val": 44
+    }
+  },
+  "phase_by_split": {
+    "ADNI1": {
+      "test": 40,
+      "train": 109,
+      "val": 21
+    },
+    "ADNI2": {
+      "test": 96,
+      "train": 340,
+      "val": 44
+    },
+    "ADNI3": {
+      "test": 16,
+      "train": 78,
+      "val": 11
+    },
+    "ADNIGO": {
+      "test": 12,
+      "train": 49,
+      "val": 6
+    }
+  },
+  "sex_by_split": {
+    "Female": {
+      "test": 66,
+      "train": 262,
+      "val": 39
+    },
+    "Male": {
+      "test": 98,
+      "train": 314,
+      "val": 43
+    }
+  },
+  "cognitive_complete_by_split": {
+    "0": {
+      "test": 19,
+      "train": 80,
+      "val": 15
+    },
+    "1": {
+      "test": 145,
+      "train": 496,
+      "val": 67
+    }
+  },
+  "notes": [
+    "Diagnosis was the only stratification variable.",
+    "ADNI phase, sex, and cognitive completeness were audited but did not influence assignment.",
+    "No model performance or preprocessing result was used to select the seed or assignments."
+  ]
+}
