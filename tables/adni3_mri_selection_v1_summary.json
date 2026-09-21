@@ -1,0 +1,16 @@
+{
+  "subjects_total": 104,
+  "subjects_selected": 103,
+  "subjects_excluded": 1,
+  "status_counts": {
+    "selected": 103,
+    "exclude_qc_match_missing": 1
+  },
+  "selected_class_counts": {
+    "MCI": 73,
+    "Dementia": 30
+  },
+  "excluded_class_counts": {
+    "MCI": 1
+  }
+}
