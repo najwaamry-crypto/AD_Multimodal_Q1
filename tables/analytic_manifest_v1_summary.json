@@ -1,0 +1,61 @@
+{
+  "version": "analytic_manifest_v1",
+  "subjects": 822,
+  "unique_rids": 822,
+  "diagnosis_counts": {
+    "MCI": 438,
+    "CN": 224,
+    "Dementia": 160
+  },
+  "dx_phase_counts": {
+    "ADNI2": 480,
+    "ADNI1": 170,
+    "ADNI3": 105,
+    "ADNIGO": 67
+  },
+  "primary_non_cognitive_block": [
+    "age_at_index",
+    "sex",
+    "education_years",
+    "apoe4_count"
+  ],
+  "primary_non_cognitive_coverage": {
+    "age_at_index": 822,
+    "sex": 822,
+    "education_years": 822,
+    "apoe4_count": 820
+  },
+  "secondary_cognitive_block": [
+    "MMSE",
+    "ADAS13",
+    "CDR_SB",
+    "LOGMEM_DELAYED",
+    "RAVLT_T1_5_SUM",
+    "RAVLT_30MIN"
+  ],
+  "secondary_cognitive_coverage": {
+    "MMSE": 790,
+    "ADAS13": 810,
+    "CDR_SB": 787,
+    "LOGMEM_DELAYED": 724,
+    "RAVLT_T1_5_SUM": 819,
+    "RAVLT_30MIN": 817
+  },
+  "secondary_cognitive_complete_cases": 708,
+  "secondary_cognitive_complete_percent": 86.13,
+  "imaging_identifier_coverage": {
+    "pet_image_id": 822,
+    "selected_loni_series": 822,
+    "selected_image_ids": 822,
+    "selected_series_instance_uids": 822
+  },
+  "apoe_missing": 2,
+  "split_status": "not yet assigned",
+  "model_training_status": "not started",
+  "notes": [
+    "Primary cohort remains N=822.",
+    "Cognitive missingness does not remove subjects from the primary cohort.",
+    "No train/validation/test split is created by this script.",
+    "No preprocessing or model-performance criterion is used in cohort construction."
+  ]
+}
