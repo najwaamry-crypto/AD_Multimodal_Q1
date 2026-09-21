@@ -1,0 +1,17 @@
+{
+  "subjects_total": 574,
+  "selected_subjects": 545,
+  "status_counts": {
+    "selected": 545,
+    "exclude_accelerated_not_selected": 13,
+    "exclude_no_accelerated_candidate": 11,
+    "exclude_accelerated_qc_missing": 5
+  },
+  "selected_class_counts": {
+    "MCI": 278,
+    "CN": 178,
+    "Dementia": 89
+  },
+  "multiple_distinct_accelerated_series": 0,
+  "subjects_with_duplicate_key_mri_rows_for_selected_series": 3
+}
