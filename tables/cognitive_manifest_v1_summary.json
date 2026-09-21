@@ -1,0 +1,90 @@
+{
+  "subjects": 822,
+  "index_date": "PET acquisition date",
+  "window_days": 60,
+  "selection_rule": "Nearest available cognitive score within ±60 days of PET. Equal-distance conflicting scores are treated as missing.",
+  "subject_exclusion": "none",
+  "variables": {
+    "MMSE": {
+      "available_within_60_days": 790,
+      "missing_after_window": 32,
+      "coverage_percent": 96.11
+    },
+    "ADAS11": {
+      "available_within_60_days": 818,
+      "missing_after_window": 4,
+      "coverage_percent": 99.51
+    },
+    "ADAS13": {
+      "available_within_60_days": 810,
+      "missing_after_window": 12,
+      "coverage_percent": 98.54
+    },
+    "CDR_GLOBAL": {
+      "available_within_60_days": 787,
+      "missing_after_window": 35,
+      "coverage_percent": 95.74
+    },
+    "CDR_SB": {
+      "available_within_60_days": 787,
+      "missing_after_window": 35,
+      "coverage_percent": 95.74
+    },
+    "LOGMEM_IMMEDIATE": {
+      "available_within_60_days": 725,
+      "missing_after_window": 97,
+      "coverage_percent": 88.2
+    },
+    "LOGMEM_DELAYED": {
+      "available_within_60_days": 724,
+      "missing_after_window": 98,
+      "coverage_percent": 88.08
+    },
+    "RAVLT_T1_5_SUM": {
+      "available_within_60_days": 819,
+      "missing_after_window": 3,
+      "coverage_percent": 99.64
+    },
+    "RAVLT_TRIAL6": {
+      "available_within_60_days": 819,
+      "missing_after_window": 3,
+      "coverage_percent": 99.64
+    },
+    "RAVLT_30MIN": {
+      "available_within_60_days": 817,
+      "missing_after_window": 5,
+      "coverage_percent": 99.39
+    },
+    "RAVLT_RECOGNITION": {
+      "available_within_60_days": 816,
+      "missing_after_window": 6,
+      "coverage_percent": 99.27
+    }
+  },
+  "secondary_cognitive_panel": {
+    "variables": [
+      "MMSE",
+      "ADAS13",
+      "CDR_SB",
+      "LOGMEM_DELAYED",
+      "RAVLT_T1_5_SUM",
+      "RAVLT_30MIN"
+    ],
+    "complete_cases": 708,
+    "complete_case_percent": 86.13
+  },
+  "auxiliary_cognitive_variables": [
+    "ADAS11",
+    "CDR_GLOBAL",
+    "LOGMEM_IMMEDIATE",
+    "RAVLT_TRIAL6",
+    "RAVLT_RECOGNITION"
+  ],
+  "primary_non_cognitive_block": [
+    "age_at_index",
+    "sex",
+    "education_years",
+    "apoe4_count"
+  ],
+  "cognitive_role": "Secondary/ablation analysis only. Cognitive scores are not part of the primary non-cognitive clinical block."
+}

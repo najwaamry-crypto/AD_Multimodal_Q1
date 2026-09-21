@@ -1,0 +1,146 @@
+{
+  "subjects": 822,
+  "index_date": "PET acquisition date",
+  "note": "Audit only. No cognitive feature selection, time window, imputation rule, or subject exclusion is locked by this script.",
+  "tables": {
+    "MMSE": {
+      "rows_for_target_subjects": 4973,
+      "unique_target_subjects": 822
+    },
+    "CDR": {
+      "rows_for_target_subjects": 5131,
+      "unique_target_subjects": 822
+    },
+    "ADAS": {
+      "rows_for_target_subjects": 4969,
+      "unique_target_subjects": 822
+    },
+    "NEUROBAT": {
+      "rows_for_target_subjects": 5788,
+      "unique_target_subjects": 822
+    }
+  },
+  "variables": {
+    "MMSE": {
+      "any_score": 822,
+      "same_pet_visit": 198,
+      "exact_pet_date": 54,
+      "within_30_days": 453,
+      "within_60_days": 790,
+      "within_90_days": 810,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 29.0,
+      "nearest_abs_gap_p90_days": 47.0
+    },
+    "ADAS11": {
+      "any_score": 822,
+      "same_pet_visit": 818,
+      "exact_pet_date": 221,
+      "within_30_days": 809,
+      "within_60_days": 818,
+      "within_90_days": 818,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 4.0,
+      "nearest_abs_gap_p90_days": 14.0
+    },
+    "ADAS13": {
+      "any_score": 822,
+      "same_pet_visit": 810,
+      "exact_pet_date": 220,
+      "within_30_days": 801,
+      "within_60_days": 810,
+      "within_90_days": 810,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 4.0,
+      "nearest_abs_gap_p90_days": 15.0
+    },
+    "CDR_GLOBAL": {
+      "any_score": 822,
+      "same_pet_visit": 198,
+      "exact_pet_date": 53,
+      "within_30_days": 451,
+      "within_60_days": 787,
+      "within_90_days": 808,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 29.0,
+      "nearest_abs_gap_p90_days": 47.89999999999998
+    },
+    "CDR_SB": {
+      "any_score": 822,
+      "same_pet_visit": 198,
+      "exact_pet_date": 53,
+      "within_30_days": 451,
+      "within_60_days": 787,
+      "within_90_days": 808,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 29.0,
+      "nearest_abs_gap_p90_days": 47.89999999999998
+    },
+    "LOGMEM_IMMEDIATE": {
+      "any_score": 822,
+      "same_pet_visit": 134,
+      "exact_pet_date": 31,
+      "within_30_days": 388,
+      "within_60_days": 725,
+      "within_90_days": 746,
+      "nearest_score_conflicts": 1,
+      "nearest_abs_gap_median_days": 32.0,
+      "nearest_abs_gap_p90_days": 76.89999999999998
+    },
+    "LOGMEM_DELAYED": {
+      "any_score": 822,
+      "same_pet_visit": 132,
+      "exact_pet_date": 30,
+      "within_30_days": 387,
+      "within_60_days": 724,
+      "within_90_days": 745,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 32.0,
+      "nearest_abs_gap_p90_days": 77.0
+    },
+    "RAVLT_T1_5_SUM": {
+      "any_score": 821,
+      "same_pet_visit": 819,
+      "exact_pet_date": 222,
+      "within_30_days": 811,
+      "within_60_days": 819,
+      "within_90_days": 819,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 4.0,
+      "nearest_abs_gap_p90_days": 14.0
+    },
+    "RAVLT_TRIAL6": {
+      "any_score": 821,
+      "same_pet_visit": 819,
+      "exact_pet_date": 222,
+      "within_30_days": 811,
+      "within_60_days": 819,
+      "within_90_days": 819,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 4.0,
+      "nearest_abs_gap_p90_days": 14.0
+    },
+    "RAVLT_30MIN": {
+      "any_score": 822,
+      "same_pet_visit": 817,
+      "exact_pet_date": 221,
+      "within_30_days": 809,
+      "within_60_days": 817,
+      "within_90_days": 817,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 4.0,
+      "nearest_abs_gap_p90_days": 14.0
+    },
+    "RAVLT_RECOGNITION": {
+      "any_score": 822,
+      "same_pet_visit": 816,
+      "exact_pet_date": 221,
+      "within_30_days": 808,
+      "within_60_days": 816,
+      "within_90_days": 816,
+      "nearest_score_conflicts": 0,
+      "nearest_abs_gap_median_days": 4.0,
+      "nearest_abs_gap_p90_days": 14.0
+    }
+  }
+}
