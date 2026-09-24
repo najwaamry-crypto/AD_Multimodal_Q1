@@ -262,36 +262,188 @@ Across the six-subject pilot panel, no gross spatial misregistration,
 rotation error, major field-of-view mismatch, or obvious normalization artifact
 was identified.
 
-## Cohort-wide QC plan
+## Cohort-wide spatial QC
 
-Before final model training, the following must be audited across all 822 PET
-volumes:
+The spatial preprocessing pipeline was executed on the complete analytic
+cohort of 822 FDG-PET scans.
 
-- successful preprocessing count
-- final image shape
-- final voxel size
-- affine consistency with the MNI template
-- finite voxel values
-- PET support coverage
-- vermis reference voxel count
-- vermis reference mean
-- vermis reference coefficient of variation
-- normalized brain intensity statistics
-- registration QC
-- visual review of flagged outliers
+Initial cohort-wide QC identified a small number of cases with reduced
+brain coverage after PET-to-MRI registration. Cases with brain coverage
+below 99% were flagged for targeted review rather than automatically
+excluded.
 
-Outliers must be flagged for review rather than automatically excluded.
+Ten scans required registration recovery:
 
-Any exclusion criterion must be based on predefined imaging or registration QC
-rules and must not depend on downstream classification performance.
+- one case was initially identified with approximately 42.4% brain coverage
+- one case showed approximately 81.8% brain coverage
+- eight additional cases showed approximately 97.9% to 98.9% coverage
+
+Visual inspection demonstrated that the most severe failures arose from
+suboptimal rigid PET-to-MRI registration rather than unusable PET data.
+
+A robust rigid-registration recovery procedure was therefore applied using:
+
+- the brain-extracted subject MRI as the fixed image
+- the native PET image as the moving image
+- geometric-center initialization
+- rigid 6-degree-of-freedom transformation
+- Mattes mutual information
+- multiresolution optimization
+- no nonlinear PET deformation
+
+The recovered PET-to-MRI transform was then concatenated with the previously
+locked subject-specific MRI-to-MNI affine transform, and the PET volume was
+resampled once into MNI152NLin2009cAsym 1-mm space.
+
+The same transform chain was applied to the PET support mask using
+nearest-neighbor interpolation.
+
+All ten registration outliers were successfully recovered and retained in the
+analytic cohort.
+
+After registration recovery, cohort-wide spatial QC showed:
+
+- total subjects: 822
+- mean brain coverage: 99.9705%
+- minimum brain coverage: 99.0468%
+- maximum brain coverage: 100%
+- subjects below 99% brain coverage: 0
+- subjects below 98% brain coverage: 0
+- subjects below 95% brain coverage: 0
+
+Fourteen residual flagged cases, defined by brain coverage below 99.5% or
+the presence of negative brain voxels, underwent additional visual inspection.
+
+No gross residual PET-to-MRI or PET-to-MNI misregistration was identified in
+these cases.
+
+Three subjects retained a very small fraction of negative brain voxels after
+spatial preprocessing. The maximum observed negative fraction was
+approximately 0.244%, and these cases did not show spatial registration
+failure.
+
+No subject was excluded based on the final PET spatial QC.
+
+## Reference-region intensity normalization
+
+Following successful spatial preprocessing, FDG-PET intensities were normalized
+using a cerebellar vermis reference region.
+
+The reference mask was derived from the AAL SPM12 vermis labels and resampled
+to the study target space:
+
+MNI152NLin2009cAsym, 1-mm isotropic resolution.
+
+The final reference mask contained 16,320 voxels.
+
+For each subject, the reference denominator was defined as the arithmetic mean
+of all finite PET voxel intensities within the vermis mask.
+
+The normalized PET image was defined as:
+
+PET_norm(v) = PET_MNI(v) / mean(PET_MNI within AAL vermis)
+
+This normalization strategy is an internal, reproducible study reference and
+must not be described as equivalent to the UC Berkeley Top50PonsVermis method.
+
+## Concordance with UC Berkeley FDG reference values
+
+The internal AAL-vermis reference was compared with the official UC Berkeley
+ADNI Top50PonsVermis values.
+
+Exact RID and PET examination-date matching provided an official UC Berkeley
+reference value for 821 of the 822 analytic subjects.
+
+Across these 821 matched scans:
+
+- Pearson correlation: r = 0.8244
+- Spearman correlation: rho = 0.8096
+- mean AAL-vermis / UC Berkeley ratio: 0.9151
+- median AAL-vermis / UC Berkeley ratio: 0.9176
+- mean absolute difference between reference values: 0.0902
+
+The mean AAL-vermis / UC Berkeley ratio was:
+
+- CN: 0.9154
+- MCI: 0.9164
+- Dementia: 0.9108
+
+A Kruskal-Wallis comparison of the ratio across diagnostic groups showed:
+
+- H = 1.2896
+- p = 0.5248
+
+These results indicate substantial inter-individual concordance between the
+two reference measures, without evidence of a diagnosis-dependent difference
+in their ratio.
+
+The AAL-vermis and UC Berkeley Top50PonsVermis measures nevertheless represent
+different anatomical reference definitions and are not treated as
+interchangeable.
+
+The UC Berkeley analysis is therefore used as a reference-method concordance
+analysis rather than as a reproduction of the UC Berkeley normalization
+procedure.
+
+## Cohort-wide normalization QC
+
+The final AAL-vermis normalization was applied to all 822 PET scans.
+
+The raw vermis reference denominator showed:
+
+- subjects with valid denominator: 822 / 822
+- missing denominators: 0
+- non-positive denominators: 0
+- mean: 0.9534
+- standard deviation: 0.0836
+- minimum: 0.7124
+- median: 0.9502
+- maximum: 1.1974
+
+After normalization:
+
+- successfully normalized PET volumes: 822 / 822
+- finite-value failures: 0
+- post-normalization vermis mean range:
+  approximately 0.9999998 to 1.0000002
+
+The original spatially processed PET volumes are preserved separately from the
+normalized volumes.
+
+## Final PET preprocessing pipeline
+
+The locked FDG-PET preprocessing pipeline is therefore:
+
+1. native FDG-PET input
+2. native-space PET support-mask generation
+3. rigid PET-to-subject-MRI registration
+4. composition with the locked MRI-to-MNI affine transform
+5. single PET resampling into MNI152NLin2009cAsym 1-mm space
+6. support-mask transformation using nearest-neighbor interpolation
+7. cohort-wide spatial QC
+8. targeted robust registration recovery for flagged cases
+9. visual QC of residual outliers
+10. AAL-vermis reference-mean estimation
+11. subject-wise FDG-PET intensity normalization by the vermis mean
+12. cohort-wide normalization QC
+
+No nonlinear deformation is applied directly to PET.
+
+No subject was excluded on the basis of downstream model performance.
 
 ## Status
 
 Spatial preprocessing:
-pilot validated.
+locked for 822 / 822 subjects.
 
-Vermis-based intensity normalization:
-pilot validated, pending final cohort-wide lock.
+Registration QC and recovery:
+completed and locked.
 
-Cohort-wide execution:
-not yet launched.
+AAL-vermis intensity normalization:
+completed and locked for 822 / 822 subjects.
+
+UC Berkeley reference-method concordance analysis:
+completed for 821 / 822 subjects.
+
+Final PET preprocessing status:
+LOCKED FOR DOWNSTREAM MODELLING.
