@@ -2,8 +2,11 @@
 set -euo pipefail
 
 ROOT="/home/najwa-amry/AD_Multimodal_Q1"
-PYTHON="/home/najwa-amry/.local/share/mamba/envs/adq1/bin/python"
+ENV_BIN="/home/najwa-amry/.local/share/mamba/envs/adq1/bin"
+PYTHON="$ENV_BIN/python"
 SCRIPT="$ROOT/src/preprocessing/03a_preprocess_pet_spatial_v1.py"
+
+export PATH="$ENV_BIN:$PATH"
 
 LOCK="$ROOT/logs/pet_spatial_v1_batch.lock"
 LOG="$ROOT/logs/pet_spatial_v1_batch.log"
