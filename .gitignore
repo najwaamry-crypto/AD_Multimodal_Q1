@@ -27,3 +27,6 @@ env/
 
 *.pt
 *.pth
+
+# Temporary generated seed scripts
+experiments/seed_robustness_v1/
