@@ -1,0 +1,15 @@
+{
+  "test_n": 164,
+  "test_class_counts": {
+    "MCI": 87,
+    "CN": 45,
+    "Dementia": 32
+  },
+  "primary_model": "MRI + PET + Clinical",
+  "primary_seed": 20260921,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260925,
+  "bootstrap_method": "paired diagnosis-stratified subject bootstrap with replacement",
+  "confidence_interval": "95% percentile bootstrap",
+  "post_test_tuning": false
+}
