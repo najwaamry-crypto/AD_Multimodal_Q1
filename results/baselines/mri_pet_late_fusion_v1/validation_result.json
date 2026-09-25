@@ -1,0 +1,25 @@
+{
+  "fusion_rule": "0.5 MRI + 0.5 PET",
+  "mri": {
+    "accuracy": 0.5365853658536586,
+    "balanced_accuracy": 0.3333333333333333,
+    "macro_f1": 0.2328042328042328,
+    "macro_auc_ovr": 0.6617955874534821,
+    "log_loss": 1.032304286956787
+  },
+  "pet": {
+    "accuracy": 0.573170731707317,
+    "balanced_accuracy": 0.5965909090909091,
+    "macro_f1": 0.5748772869254797,
+    "macro_auc_ovr": 0.7672115895800107,
+    "log_loss": 0.7855517864227295
+  },
+  "late_fusion": {
+    "accuracy": 0.6219512195121951,
+    "balanced_accuracy": 0.5284090909090909,
+    "macro_f1": 0.5321829037425369,
+    "macro_auc_ovr": 0.7680223285486444,
+    "log_loss": 0.8792296648025513
+  },
+  "test_accessed": false
+}
