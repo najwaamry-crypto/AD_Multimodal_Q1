@@ -1,0 +1,13 @@
+{
+  "model": "MRI + PET + Primary Clinical Fusion v1",
+  "primary_seed": 20260921,
+  "n_test": 164,
+  "accuracy": 0.6219512195121951,
+  "mean_confidence": 0.5666493675896028,
+  "mean_confidence_minus_accuracy": -0.05530185192259229,
+  "multiclass_log_loss": 0.7704264520649541,
+  "multiclass_brier_score": 0.4841519151023212,
+  "ece_10bin": 0.07590931433163493,
+  "ece_definition": "confidence-based expected calibration error using 10 equal-width bins",
+  "test_accessed": false
+}
