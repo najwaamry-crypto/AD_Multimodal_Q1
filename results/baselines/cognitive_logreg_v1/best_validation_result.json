@@ -1,0 +1,22 @@
+{
+  "analysis_type": "secondary cognitive benchmark",
+  "cognitive_variables": [
+    "MMSE",
+    "ADAS13",
+    "CDR_SB",
+    "LOGMEM_DELAYED",
+    "RAVLT_T1_5_SUM",
+    "RAVLT_30MIN"
+  ],
+  "complete_case_policy": true,
+  "n_complete_total": 708,
+  "n_train_complete": 496,
+  "n_val_complete": 67,
+  "best_C": 100.0,
+  "accuracy": 0.8656716417910447,
+  "balanced_accuracy": 0.8523569023569024,
+  "macro_f1": 0.8513526221748534,
+  "macro_auc_ovr": 0.9435948860108092,
+  "log_loss": 0.5648879255127395,
+  "test_accessed": false
+}
