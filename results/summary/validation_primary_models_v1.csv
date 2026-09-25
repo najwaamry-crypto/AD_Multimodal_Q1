@@ -1,0 +1,10 @@
+model,modalities,status,epoch,accuracy,balanced_accuracy,macro_f1,macro_auc_ovr,log_loss,source_file
+MRI + PET + Clinical,MRI + PET + Clinical,selected_primary_model,7.0,0.6219512195121951,0.6534090909090909,0.6107699089039084,0.7836788942052101,0.7883648872375488,results/multimodal/mri_pet_clinical_primary_fusion_v1/best_validation_result.json
+PET + Clinical,PET + Clinical,primary,8.0,0.5487804878048781,0.6231060606060607,0.557628562070095,0.7696504518872941,0.860538125038147,results/multimodal/pet_clinical_primary_fusion_v1/best_validation_result.json
+MRI + PET late fusion,MRI + PET,primary,,0.6219512195121951,0.5284090909090909,0.5321829037425369,0.7680223285486444,0.8792296648025513,results/baselines/mri_pet_late_fusion_v1/validation_result.json
+PET-only,PET,primary,27.0,0.573170731707317,0.5965909090909091,0.5748772869254797,0.7674641148325358,0.7855563163757324,results/baselines/pet_spatial_3dcnn_v1/best_validation_result.json
+MRI + Clinical,MRI + Clinical,primary,49.0,0.5609756097560976,0.6325757575757576,0.5698412698412697,0.7536848750664541,0.8639122843742371,results/multimodal/mri_clinical_primary_fusion_v1/best_validation_result.json
+MRI ↔ PET cross-modal attention,MRI + PET,primary,15.0,0.5609756097560976,0.6174242424242424,0.5696598639455782,0.7500498405103668,0.8548073172569275,results/multimodal/mri_pet_crossmodal_attention_v1/best_validation_result.json
+MRI + PET simple fusion,MRI + PET,primary,17.0,0.5365853658536586,0.3333333333333333,0.2328042328042328,0.6677731259968103,1.034354567527771,results/baselines/mri_pet_simple_fusion_v1/best_validation_result.json
+MRI-only V2,MRI,primary,5.0,0.5365853658536586,0.3333333333333333,0.2328042328042328,0.6620481127060075,1.0323045253753662,results/baselines/mri_spatial_3dcnn_v2/best_validation_result.json
+Clinical primary,Clinical,primary,,0.3780487804878049,0.4602272727272727,0.38198742074818764,0.6449162679425837,1.0356041813686605,results/baselines/clinical_primary_logreg_v1/best_validation_result.json

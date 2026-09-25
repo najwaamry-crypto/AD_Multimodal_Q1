@@ -1,0 +1,8 @@
+{
+  "selection_metric": "macro_auc_ovr",
+  "test_accessed": false,
+  "selected_primary_model": "MRI + PET + Clinical",
+  "selected_primary_model_validation_auc": 0.7836788942052101,
+  "n_primary_models": 9,
+  "n_all_experiments": 11
+}
