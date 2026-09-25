@@ -1,0 +1,14 @@
+{
+  "population": "164 held-out test subjects",
+  "model": "MRI + PET + Primary Clinical Fusion v1",
+  "primary_seed": 20260921,
+  "ablation_definition": "one clinical feature at a time set to zero in standardized model input space",
+  "clinical_input_order": [
+    "age_z",
+    "sex_binary_male_1",
+    "education_z",
+    "apoe4_z"
+  ],
+  "interpretation": "descriptive post-hoc sensitivity analysis; not causal feature importance",
+  "post_test_model_tuning": false
+}
