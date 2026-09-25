@@ -1,0 +1,9 @@
+{
+  "checkpoint": "/home/najwa-amry/AD_Multimodal_Q1/results/multimodal/mri_pet_clinical_primary_fusion_v1/best_validation_model.pt",
+  "target_layer_mri": "mri_encoder.features[12]",
+  "target_layer_pet": "pet_encoder.features[12]",
+  "target_definition": "predicted class",
+  "pilot_selection": "median-confidence correctly classified test subject within each true class",
+  "purpose": "technical Grad-CAM sanity check before cohort-wide XAI",
+  "post_test_model_tuning": false
+}

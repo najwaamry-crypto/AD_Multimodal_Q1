@@ -30,3 +30,6 @@ env/
 
 # Temporary generated seed scripts
 experiments/seed_robustness_v1/
+
+# Large XAI attribution volumes
+results/xai/**/*.npy

@@ -431,7 +431,7 @@ model.eval()
 
 
 # ============================================================
-# SELECT 3 DETERMINISTIC TECHNICAL PILOT CASES
+# SELECT ALL HELD-OUT TEST SUBJECTS
 # ============================================================
 
 pred = pd.read_csv(
@@ -489,50 +489,7 @@ merged = pred.merge(
     suffixes=("", "_manifest")
 )
 
-selected = []
-
-for diagnosis in [
-    "CN",
-    "MCI",
-    "Dementia",
-]:
-
-    subset = merged[
-        (
-            merged["diagnosis"]
-            == diagnosis
-        )
-        &
-        (
-            merged["correct"]
-        )
-    ].copy()
-
-    if len(subset) == 0:
-
-        raise RuntimeError(
-            f"No correctly classified {diagnosis} case."
-        )
-
-    subset = subset.sort_values(
-        "confidence"
-    ).reset_index(
-        drop=True
-    )
-
-    # deterministic median-confidence correct case
-    row = subset.iloc[
-        len(subset) // 2
-    ]
-
-    selected.append(
-        row
-    )
-
-
-selected_df = pd.DataFrame(
-    selected
-)
+selected_df = merged.copy().reset_index(drop=True)
 
 selected_df[
     [
@@ -540,10 +497,11 @@ selected_df[
         "diagnosis",
         "pred_label",
         "confidence",
+        "correct",
     ]
 ].to_csv(
     OUT_DIR
-    / "pilot_selected_cases.csv",
+    / "cohort_subjects.csv",
     index=False
 )
 
@@ -729,7 +687,7 @@ results_df = pd.DataFrame(
 
 results_df.to_csv(
     OUT_DIR
-    / "pilot_gradcam_summary.csv",
+    / "cohort_gradcam_summary.csv",
     index=False
 )
 
@@ -747,11 +705,11 @@ metadata = {
     "target_definition":
         "predicted class",
 
-    "pilot_selection":
-        "median-confidence correctly classified test subject within each true class",
+    "population":
+        "all 164 held-out test subjects",
 
     "purpose":
-        "technical Grad-CAM sanity check before cohort-wide XAI",
+        "cohort-wide locked Grad-CAM analysis",
 
     "post_test_model_tuning":
         False,
@@ -760,7 +718,7 @@ metadata = {
 
 with open(
     OUT_DIR
-    / "pilot_xai_metadata.json",
+    / "cohort_xai_metadata.json",
     "w"
 ) as f:
 
@@ -772,7 +730,7 @@ with open(
 
 
 print(
-    "=== PRIMARY MODEL GRAD-CAM PILOT V1 ==="
+    "=== PRIMARY MODEL GRAD-CAM COHORT V1 ==="
 )
 
 print(
@@ -795,7 +753,7 @@ print(
 )
 
 print(
-    "\nSelected deterministic pilot cases:"
+    "\nProcessed held-out test subjects:"
 )
 
 print(

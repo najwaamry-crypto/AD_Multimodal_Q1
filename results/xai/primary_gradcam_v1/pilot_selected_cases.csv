@@ -1,0 +1,4 @@
+RID,diagnosis,pred_label,confidence
+4200,CN,CN,0.5168675
+4212,MCI,MCI,0.5275358
+627,Dementia,Dementia,0.7948087

@@ -1,0 +1,21 @@
+{
+  "total": 164,
+  "true_class_counts": {
+    "MCI": 87,
+    "CN": 45,
+    "Dementia": 32
+  },
+  "correct": 102,
+  "incorrect": 62,
+  "map_shape": [
+    96,
+    112,
+    96
+  ],
+  "aggregation": [
+    "voxelwise mean",
+    "voxelwise median"
+  ],
+  "interpretation": "descriptive aggregation of individually normalized Grad-CAM maps",
+  "post_test_model_tuning": false
+}
